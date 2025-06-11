@@ -13,6 +13,11 @@ class PriorityQueue:
 
     def __init__(self):
         ...  # TODO использовать deque для реализации очереди с приоритетами
+        # self.data = {}
+        # for pr in range(self.HIGH_PRIORITY, self.LOW_PRIORITY + 1)
+        #     self.data[pr] = deque()
+        self._len = 0
+        self.data = {pr: deque() for pr in range(self.HIGH_PRIORITY, self.LOW_PRIORITY + 1 )}
 
     def enqueue(self, elem: Any, priority: int = 0) -> None:
         """
@@ -21,8 +26,10 @@ class PriorityQueue:
         :param elem: Элемент, который должен быть добавлен
         :param priority: Приоритет добавляемого элемента
         """
-        ...  # TODO реализовать метод enqueue
-
+        if not self.HIGH_PRIORITY <= priority >= self.LOW_PRIORITY:
+            raise ValueError('...')
+        self.data[priority].appendleft(elem)  # TODO реализовать метод enqueue
+        self._len += 1
     def dequeue(self) -> Any:
         """
         Извлечение элемента из начала очереди.
@@ -31,7 +38,13 @@ class PriorityQueue:
 
         :return: Извлеченный с начала очереди элемент.
         """
-        ...  # TODO реализовать метод dequeue
+        # TODO реализовать метод dequeue
+
+        for deq in self.data.values():
+            if deq:
+                self._len -= 1
+                return deq.pop()
+        raise IndexError('Ошибка, если очередь пуста')
 
     def peek(self, ind: int = 0, priority: int = 0) -> Any:
         """
@@ -45,12 +58,20 @@ class PriorityQueue:
 
         :return: Значение просмотренного элемента
         """
-        ...  # TODO реализовать метод peek
+        if not isinstance(ind, int):
+            raise  TypeError('если указан не целочисленный тип индекса')
+        if not 0 <= ind <= len(self.data[priority]):
+            raise  IndexError('если индекс вне границ очереди')
+
+        return self.data[priority][-1 - ind] # TODO реализовать метод peek
 
     def clear(self) -> None:
         """ Очистка очереди. """
-        ...  # TODO реализовать метод clear
+        self.__init__()  # TODO реализовать метод clear
 
     def __len__(self):
         """ Количество элементов в очереди. """
-        ...  # TODO реализовать метод __len__
+        return self._len  # TODO реализовать метод __len__
+        len_ = 0
+        for deq in self.data:
+            len_ += len(deq)

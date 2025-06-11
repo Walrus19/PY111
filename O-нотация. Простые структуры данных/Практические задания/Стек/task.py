@@ -4,6 +4,7 @@ from typing import Any
 class Stack:
     def __init__(self):
         self._stack = []
+        self.len_ = 0
 
     def push(self, elem: Any) -> None:
         """
@@ -11,7 +12,8 @@ class Stack:
 
         :param elem: Элемент, который должен быть добавлен
         """
-        ...  # TODO реализовать операцию push
+        self._stack.append(elem)  # TODO реализовать операцию push
+        self.len_ += 1
 
     def pop(self) -> Any:
         """
@@ -21,7 +23,11 @@ class Stack:
 
         :return: Извлеченный с вершины стека элемент.
         """
-        ...  # TODO реализовать операцию pop
+        if not self._stack:
+            raise IndexError("Извлечение из пустого стека не возможно")
+
+        self.len_ -= 1
+        return self._stack.pop()  # TODO реализовать операцию pop
 
     def peek(self, ind: int = 0) -> Any:
         """
@@ -34,12 +40,20 @@ class Stack:
 
         :return: Значение просмотренного элемента
         """
-        ...  # TODO реализовать операцию peek
+        if not isinstance(ind, int):
+            raise TypeError(f"Индекс должен быть целочисленного типа, а не {type(ind).__name__}")
+
+        if not 0 <= ind < len(self._stack):
+            raise IndexError("Индекс все границ стека")
+
+        inv_ind = -1 - ind
+        return self._stack[inv_ind] # TODO реализовать операцию peek
 
     def clear(self) -> None:
         """ Очистка стека. """
-        ...  # TODO реализовать операцию clear
+        self._stack.clear() # TODO реализовать операцию clear
+        self.len_ = 0
 
     def __len__(self) -> int:
         """ Количество элементов в стеке. """
-        ...  # TODO реализовать операцию __len__
+        return self.len_  # TODO реализовать операцию __len__

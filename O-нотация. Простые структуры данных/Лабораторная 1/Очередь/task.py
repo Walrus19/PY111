@@ -60,8 +60,8 @@ class Queue:
     def clear(self) -> None:
         """ Очистка очереди. """
         # TODO реализовать метод clear
-        return self.list.clear()
-
+        self.list.clear()
+        self.len = 0
     def __len__(self):
         """ Количество элементов в очереди. """
           # TODO реализовать метод __len__

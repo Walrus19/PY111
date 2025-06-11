@@ -17,18 +17,18 @@ files:
                   }
         selected: false
         status: Unchecked
-      - offset: 601
-        length: 37
+      - offset: 953
+        length: 70
         placeholder_text: "...  # TODO реализовать метод enqueue"
         initial_state:
           length: 37
           offset: 601
         initialized_from_dependency: false
         encrypted_possible_answer: "self.priority_queue[priority].append(elem)"
-        selected: false
+        selected: true
         status: Unchecked
-      - offset: 862
-        length: 37
+      - offset: 1303
+        length: 38
         placeholder_text: "...  # TODO реализовать метод dequeue"
         initial_state:
           length: 37
@@ -40,10 +40,10 @@ files:
                           return queue.popleft()
           
                   raise IndexError("Извлечение из пустой очереди не возможно")
-        selected: false
+        selected: true
         status: Unchecked
-      - offset: 1467
-        length: 34
+      - offset: 2276
+        length: 66
         placeholder_text: "...  # TODO реализовать метод peek"
         initial_state:
           length: 34
@@ -58,10 +58,10 @@ files:
                       raise IndexError("Индекс все границ очереди")
           
                   return queue[ind]
-        selected: false
+        selected: true
         status: Unchecked
-      - offset: 1573
-        length: 35
+      - offset: 2414
+        length: 47
         placeholder_text: "...  # TODO реализовать метод clear"
         initial_state:
           length: 35
@@ -70,10 +70,10 @@ files:
         encrypted_possible_answer: |-
           for queue in self.priority_queue.values():
                       queue.clear()
-        selected: false
+        selected: true
         status: Unchecked
-      - offset: 1689
-        length: 37
+      - offset: 2542
+        length: 50
         placeholder_text: "...  # TODO реализовать метод __len__"
         initial_state:
           length: 37
@@ -85,7 +85,7 @@ files:
                       len_ += len(queue)
           
                   return len_
-        selected: false
+        selected: true
         status: Unchecked
     learner_created: false
   - name: tests/test_task.py

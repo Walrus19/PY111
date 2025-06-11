@@ -12,7 +12,7 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
+        status: Failed
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -23,6 +23,9 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: "Mon, 09 Jun 2025 12:05:41 UTC"
 record: -1
 solution_hidden: false
