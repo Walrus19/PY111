@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 614
-        length: 49
+        length: 867
         placeholder_text: "...  # TODO реализовать алгоритм бинарного поиска"
         initial_state:
           length: 49
