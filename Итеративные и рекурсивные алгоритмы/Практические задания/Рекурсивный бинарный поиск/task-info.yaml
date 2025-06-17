@@ -48,5 +48,11 @@ files:
     visible: true
     is_binary: true
     learner_created: false
+  - name: bin_s.py
+    visible: true
+    learner_created: true
+  - name: bin_s2.py
+    visible: true
+    learner_created: true
 status: Unchecked
 record: -1
