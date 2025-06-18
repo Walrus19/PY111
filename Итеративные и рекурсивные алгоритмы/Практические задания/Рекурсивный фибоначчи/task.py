@@ -6,3 +6,11 @@ def fib_recursive(n: int) -> int:
     :return: n-е число последовательности Фибоначчи
     """
     ...  # TODO реализовать рекурсивный алгоритм
+    n >= 1
+
+    if n == 1:
+        return 0
+    elif n == 2:
+        return 1
+
+    return fib_recursive(n-1) + fib_recursive(n-2)
