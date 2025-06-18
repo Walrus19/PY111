@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 614
-        length: 867
+        length: 49
         placeholder_text: "...  # TODO реализовать алгоритм бинарного поиска"
         initial_state:
           length: 49
@@ -48,13 +48,10 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-  - name: bin_s.py
-    visible: true
-    learner_created: true
   - name: bin_s2.py
     visible: true
     learner_created: true
-  - name: 1.py
+  - name: bin_s.py
     visible: true
     learner_created: true
 status: Unchecked

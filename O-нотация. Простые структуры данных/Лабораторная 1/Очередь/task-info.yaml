@@ -12,8 +12,8 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: true
-        status: Failed
-      - offset: 525
+        status: Solved
+      - offset: 529
         length: 87
         placeholder_text: "...  # TODO реализовать метод enqueue"
         initial_state:
@@ -22,8 +22,8 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: true
-        status: Failed
-      - offset: 836
+        status: Solved
+      - offset: 840
         length: 33
         placeholder_text: "...  # TODO реализовать метод dequeue"
         initial_state:
@@ -32,9 +32,9 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: true
-        status: Failed
-      - offset: 1471
-        length: 236
+        status: Solved
+      - offset: 1495
+        length: 235
         placeholder_text: "...  # TODO реализовать метод peek"
         initial_state:
           length: 34
@@ -42,8 +42,8 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: true
-        status: Failed
-      - offset: 1779
+        status: Solved
+      - offset: 1802
         length: 56
         placeholder_text: "...  # TODO реализовать метод clear"
         initial_state:
@@ -52,9 +52,9 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: true
-        status: Failed
-      - offset: 1936
-        length: 58
+        status: Solved
+      - offset: 1959
+        length: 56
         placeholder_text: "...  # TODO реализовать метод __len__"
         initial_state:
           length: 37
@@ -62,7 +62,7 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: true
-        status: Failed
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -73,9 +73,9 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: Failure
-  time: "Mon, 09 Jun 2025 11:49:43 UTC"
+  message: Congratulations!
+  time: "Wed, 11 Jun 2025 15:25:31 UTC"
 record: -1
 solution_hidden: false
