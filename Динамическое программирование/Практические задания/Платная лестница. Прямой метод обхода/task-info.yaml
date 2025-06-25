@@ -26,7 +26,7 @@ files:
           
               return coast[-1]
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -37,5 +37,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 26 Jun 2025 11:52:24 UTC"
 record: -1

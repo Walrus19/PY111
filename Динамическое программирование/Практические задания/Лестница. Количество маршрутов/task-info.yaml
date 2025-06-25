@@ -29,7 +29,7 @@ files:
           
               return count_paths
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -44,5 +44,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 26 Jun 2025 11:52:29 UTC"
 record: -1
