@@ -15,6 +15,7 @@ def sort(container: Sequence[int]) -> Sequence[int]:
     :return: Отсортированный в порядке возрастания массив
     """
 
+
     min_val = min(container)
     max_val = max(container)
     count_array_size = max_val - min_val + 1

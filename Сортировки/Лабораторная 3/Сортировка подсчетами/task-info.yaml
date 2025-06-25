@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 488
-        length: 54
+        length: 55
         placeholder_text: "...  # TODO реализовать алгоритм сортировки подсчетами"
         initial_state:
           length: 54
           offset: 486
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
+        selected: true
         status: Failed
     learner_created: false
   - name: tests/test_task.py
@@ -30,5 +30,5 @@ files:
 status: Failed
 feedback:
   message: Error
-  time: "Wed, 25 Jun 2025 15:14:55 UTC"
+  time: "Wed, 25 Jun 2025 17:49:47 UTC"
 record: -1
