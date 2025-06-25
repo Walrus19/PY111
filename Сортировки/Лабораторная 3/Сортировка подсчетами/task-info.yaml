@@ -3,16 +3,16 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 486
-        length: 54
+      - offset: 511
+        length: 408
         placeholder_text: "...  # TODO реализовать алгоритм сортировки подсчетами"
         initial_state:
           length: 54
           offset: 486
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -27,5 +27,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error
+  time: "Tue, 24 Jun 2025 10:24:27 UTC"
 record: -1
