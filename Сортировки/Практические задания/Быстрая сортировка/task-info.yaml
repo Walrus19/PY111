@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 495
-        length: 2249
+        length: 51
         placeholder_text: "...  # TODO реализовать алгоритм быстрой сортировки"
         initial_state:
           length: 51

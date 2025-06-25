@@ -1,6 +1,6 @@
 from typing import Sequence
 
-from numpy.ma import count
+# from numpy.ma import count
 
 
 def sort(container: Sequence[int]) -> Sequence[int]:
@@ -29,5 +29,5 @@ def sort(container: Sequence[int]) -> Sequence[int]:
 
     return sorted_list
 
-    # c = [1,2,3,4,2,3,4,5,0]
-    # print(sort(c))
+c = [1,2,3,4,2,3,4,5,0]
+print(sort(c))
